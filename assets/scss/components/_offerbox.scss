@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+.offer-panel {
+  .panel-heading {
+    text-align: center;
+    padding: 26px 0;
+
+    .panel-title {
+      font-size: 26px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  }
+
+  .panel-body {
+    padding: 20px 26px;
+    padding-top: 36px;
+  }
+
+  .price {
+    text-align: center;
+    position: relative;
+    line-height: 1.3;
+
+    .ammount {
+      font-size: em(80px);
+      font-weight: 400;
+      font-family: join(Oswald, $font-family-sans-serif);
+    }
+
+    .currency {
+      position: relative;
+      top: -2em;
+      left: em(-1px);
+      font-size: em(25px);
+      font-weight: 400;
+    }
+
+    .per-hour {
+      text-transform: uppercase;
+      font-size: 1.3em;
+      font-weight: 400;
+    }
+  }
+
+  .qty-range h5 {
+    margin: 0;
+    color: $gray-dark;
+    margin-bottom: 0.4em;
+  }
+
+  .disclaimer {
+    font-style: italic;
+    font-size: em(14px);
+  }
+
+
+}
+
+.offer-panel-primary {
+  background-color: #fff;
+
+
+  &.panel-default {
+    > .panel-heading {
+      background-color: #f7f7f7;
+    }
+  }
+
+
+  .panel-body {
+    padding-bottom: 52px;
+  }
+  
+}
+
+.qty-selector {
+  .input-number-spinner .btn {
+    padding: 9px 6px;
+  }
+}
+
+
+@media(min-width: $screen-sm) {
+  .offer-group [class*="col-"] {
+
+    .offer-panel {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    &:first-child .offer-panel {
+      margin-left: 0;
+    }
+
+    &:last-child .offer-panel {
+      margin-right: 0;
+    }
+  }
+
+  .offer-panel-primary {
+    margin-top: -15px;
+  }
+
+  .offer-group {
+    padding-top: 15px;
+  }
+}
+
+
+@media(min-width: $screen-md) {
+  .qty-selector {
+    .form-select {
+      padding-left: 0;
+    }
+  }
+
+  .offer-panel {
+    .price {
+      text-align: center;
+      position: relative;
+      line-height: 1.3;
+
+      .ammount {
+        font-size: em(118px);
+      }
+
+      .currency {
+        top: -1.7em;
+        left: em(-1px);
+        font-size: em(50px);
+      }
+
+      .per-hour {
+        font-size: 1.7em;
+      }
+    }
+  }
+}

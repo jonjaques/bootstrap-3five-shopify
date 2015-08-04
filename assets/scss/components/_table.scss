@@ -1,0 +1,48 @@
+.table {
+  thead>tr>th, 
+  thead>tr>td, 
+  tbody>tr>th, 
+  tbody>tr>td, 
+  tfoot>tr>th, 
+  tfoot>tr>td {
+    padding: 16px 8px;
+  }
+
+  thead>tr>th, 
+  thead>tr>td {
+    padding: 10px 8px;
+    background-color: lighten($gray-light, 25%);
+    color: $white;
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.09em;
+  }
+
+  &.table-bordered>thead>tr>th, 
+  &.table-bordered>thead>tr>td {
+    border-bottom-width: 0;
+    border: none;
+  }
+
+  &.table-bordered>tbody>tr>td {
+    border-left-width: 0;
+
+    &:last-child {
+      border-right-width: 0;
+    }
+  }
+
+  &.table-bordered {
+    border: none;
+  }
+
+  &.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f3fafc;
+  }
+
+  &.table-striped>tbody>tr:hover {
+    background-color: darken(#f3fafc, 4%);
+  }
+}
+

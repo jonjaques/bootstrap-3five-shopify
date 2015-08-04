@@ -1,0 +1,31 @@
+.panel {
+  border-radius: 0;
+  border: none;
+  background-color: #f7f7f7;
+  border-bottom: 3px solid #dedede;
+  box-shadow: none;
+}
+
+.panel-default {
+  > .panel-heading {
+    background-color: #dedede;
+  }
+}
+
+.panel-heading {
+  border-radius: 0;
+}
+
+.pane {
+  .tab-pane {
+    padding-top: 15px;
+  }
+}
+
+@media(min-width: $screen-sm) {
+  .pane {
+    .tab-pane {
+      padding: 15px;
+    }
+  }
+}

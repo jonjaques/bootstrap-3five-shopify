@@ -1,0 +1,45 @@
+.nav-tabs {
+  background-color: #efefef;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-transform: uppercase;
+
+
+  >li>a {
+    padding: 17px 0 10px 0;
+    margin-right: 30px;
+    border: none;
+    color: lighten($gray-light, 15%);
+    letter-spacing: 0.1em;
+
+    &:hover, &:focus {
+      border-bottom: 5px solid lighten($gray-light, 15%);
+    }
+  }
+
+  >li.active>a, 
+  >li.active>a:hover, 
+  >li.active>a:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid $brand-primary;
+  }
+}
+
+.breakout-pane {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  > .nav-tabs {
+    padding-right: 30px;
+    padding-left: 30px;
+    border-top-left-radius: $border-radius-small;
+    border-top-right-radius: $border-radius-small;
+  }
+}
+
+@media(max-width: $screen-xs+1) {
+  .nav-tabs>li {
+    float: none;
+  }
+}

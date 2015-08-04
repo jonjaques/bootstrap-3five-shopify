@@ -1,0 +1,145 @@
+
+$sticky-footer-height: 155px;
+
+body {
+  background-image: url('../images/admin-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20px;
+  font-weight: 300;
+}
+
+html, body, #application, .full-height, .full-height>div {
+  height: 100%;
+}
+
+.flat-bottom {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.link-nounderline {
+  text-decoration: none;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+}
+
+.link-clickable:hover {
+  cursor: pointer;
+}
+
+.input-wysiwyg.form-control {
+  height: 150px;
+  font-family: monospace;
+  padding: 8px;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto (0 - $sticky-footer-height);
+}
+
+.group-list-table td,
+.group-list-table th {
+  vertical-align: middle !important;
+}
+
+
+.sticky-footer, .push {
+  padding-top: 30px;
+  height: $sticky-footer-height - 30px;
+}
+
+.sticky-footer {
+  text-align: center;
+
+  .threefive-logo {
+    text-decoration: none;
+    font-size: 6em;
+    display: block;
+    width: 2em;
+    margin: 0 auto;
+    margin-bottom: -35px;
+  }
+
+  .threefive-text {
+    a {
+      text-transform: uppercase;
+      color: $gray-dark;
+      font-size: 0.8em;
+
+      &:hover, &:focus, &:active {
+        color: lighten($gray, 5%)
+      }
+    }
+  }
+
+  .icon-3five {
+    color: $white;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      color: $white;
+      opacity: 1.0;
+    }
+  }
+}
+
+.shopify-pane {
+  padding-top: 15px;
+}
+
+.pane {
+  background: $white;
+  border-radius: $border-radius-large;
+  padding-bottom: $padding-base-vertical;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.shopify-pane-inner {
+  background: $white;
+  border-radius: $border-radius-base;
+  padding-bottom: $padding-base-vertical;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.shopify-tabset {
+  background: $gray-lighter;
+  border-radius: $border-radius-base $border-radius-base 0 0;
+
+  > li {
+    border: none;
+    border-right: 1px solid darken($gray-lighter, 5%);
+
+    > a {
+      margin-right: 0;
+      border: 1px solid transparent;
+      border-radius: 0;
+      color: $gray-light;
+
+      &:hover, &:focus {
+        background: lighten($gray-lighter, 5%);
+        color: $brand-primary;
+        border-bottom-color: #ddd;
+      }
+    }
+
+    &:first-child > a {
+      border-radius: $border-radius-base 0 0 0;
+    }
+
+    &.active > a, &.active > a:hover, &.active > a:focus {
+      background: $white;
+      border-color: transparent;
+      color: $gray-darker;
+    }
+  }
+}
+
+.shopify-tabpane {
+  padding: $padding-large-vertical $padding-large-horizontal;
+}

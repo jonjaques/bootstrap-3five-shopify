@@ -7,7 +7,6 @@ body {
   background-position: 50% 100%;
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 20px;
   font-weight: 300;
 }
 
@@ -37,23 +36,13 @@ html, body, #application, .full-height, .full-height>div {
   padding: 8px;
 }
 
-.wrapper {
-  min-height: 100%;
-  margin: 0 auto (0 - $sticky-footer-height);
-}
-
 .group-list-table td,
 .group-list-table th {
   vertical-align: middle !important;
 }
 
-
-.sticky-footer, .push {
-  padding-top: 30px;
-  height: $sticky-footer-height - 30px;
-}
-
-.sticky-footer {
+footer {
+  height: 182px;
   text-align: center;
 
   .threefive-logo {
@@ -62,10 +51,12 @@ html, body, #application, .full-height, .full-height>div {
     display: block;
     width: 2em;
     margin: 0 auto;
-    margin-bottom: -35px;
+    margin-bottom: -60px;
   }
 
   .threefive-text {
+    position: relative;
+    z-index:2;
     a {
       text-transform: uppercase;
       color: $gray-dark;

@@ -1,6 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 
 .offer-panel {
+
   .panel-heading {
     text-align: center;
     padding: 26px 0;
@@ -15,6 +16,29 @@
   .panel-body {
     padding: 20px 26px;
     padding-top: 36px;
+    position: relative;
+  }
+
+  $flair-diameter: 80px;
+  .flair {
+    position: absolute;
+    width: $flair-diameter;
+    height: $flair-diameter;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    top: 0 - $flair-diameter - 15px;
+    right: 0 - 35px;
+    z-index: 1;
+    font-weight: bold;
+    background-color: $brand-success;
+
+    span {
+      line-height: 1.2em;
+      position: relative;
+      display: block;
+      top: 16px;
+    }
   }
 
   .price {
@@ -71,7 +95,7 @@
   .panel-body {
     padding-bottom: 52px;
   }
-  
+
 }
 
 .qty-selector {

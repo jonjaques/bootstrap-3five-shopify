@@ -9,6 +9,7 @@
     padding: 17px 0 10px 0;
     margin-right: 30px;
     border: none;
+    border-bottom: 5px solid transparent;
     color: lighten($gray-light, 15%);
     letter-spacing: 0.1em;
 
@@ -29,6 +30,7 @@
 .breakout-pane {
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 22px;
 
   > .nav-tabs {
     padding-right: 30px;

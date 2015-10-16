@@ -58,3 +58,35 @@ h6, .h6 {
 }
 
 
+input[type="checkbox"] {
+  display:none;
+
+  + label {
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin-top: 0.4em;
+
+    &:before {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin: -2px 10px 0 0;
+      vertical-align: top;
+      background: transparent;
+      border: 2px solid #999;
+      cursor: pointer;
+      content: '';
+      padding: 0px;
+      text-align: center;
+      border-radius: 4px;
+    }
+  }
+}
+
+input[type="checkbox"]:checked + label:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+  color: $brand-primary;
+}
+
+

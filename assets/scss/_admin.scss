@@ -1,6 +1,23 @@
 
 $sticky-footer-height: 155px;
 
+
+// [class^="icon-"], [class*=" icon-"] {
+//   font-family: '3five';
+//   speak: none;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// :before {
+//   content: "\e600";
+// }
+
 body {
   background-image: url('../images/admin-bg.jpg');
   background-repeat: no-repeat;
@@ -10,8 +27,35 @@ body {
   font-weight: 300;
 }
 
+.container-fluid {
+  width: 100%;
+
+  @media(max-width: $screen-sm - 1) {
+    padding-left: 0;
+    padding-right: 0;
+
+    .jumbotron {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
 html, body, #application, .full-height, .full-height>div {
   height: 100%;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+#application {
+  footer {
+    width: 100%;
+  }
+  @media(min-width: $screen-sm) {
+    padding: 22px 6px;
+  }
 }
 
 .flat-bottom {
@@ -42,7 +86,7 @@ html, body, #application, .full-height, .full-height>div {
 }
 
 footer {
-  height: 182px;
+  height: 150px;
   text-align: center;
 
   .threefive-logo {
@@ -82,13 +126,6 @@ footer {
 
 .shopify-pane {
   padding-top: 15px;
-}
-
-.pane {
-  background: $white;
-  border-radius: $border-radius-large;
-  padding-bottom: $padding-base-vertical;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .shopify-pane-inner {

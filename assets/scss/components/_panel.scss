@@ -17,15 +17,23 @@
 }
 
 .pane {
+  background: $white;
+  border-radius: $border-radius-large;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding-bottom: 30px;
+  @include clearfix;
+
   .tab-pane {
     padding-top: 15px;
   }
-}
 
-@media(min-width: $screen-sm) {
-  .pane {
-    .tab-pane {
-      padding: 15px;
-    }
+  // .jumbotron {
+  //   margin-top: -30px;
+  //   margin-left: -15px;
+  //   margin-right: -15px;
+  // }
+
+  @media(min-width: $screen-sm) {
+    // padding: 30px;
   }
 }

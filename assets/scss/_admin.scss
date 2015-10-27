@@ -1,6 +1,4 @@
-
 $sticky-footer-height: 155px;
-
 
 // [class^="icon-"], [class*=" icon-"] {
 //   font-family: '3five';
@@ -19,7 +17,7 @@ $sticky-footer-height: 155px;
 // }
 
 body {
-  background-image: url('../images/admin-bg.jpg');
+  background-image: url("../images/admin-bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-attachment: fixed;
@@ -30,18 +28,20 @@ body {
 .container-fluid {
   width: 100%;
 
-  @media(max-width: $screen-sm - 1) {
-    padding-left: 0;
-    padding-right: 0;
-
+  @media (max-width: $screen-sm - 1) {
     .jumbotron {
       padding-left: 40px;
       padding-right: 40px;
     }
+
+    .pane {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
   }
 }
 
-html, body, #application, .full-height, .full-height>div {
+html, body, #application, .full-height, .full-height > div {
   height: 100%;
 }
 
@@ -53,7 +53,8 @@ html, body, #application, .full-height, .full-height>div {
   footer {
     width: 100%;
   }
-  @media(min-width: $screen-sm) {
+
+  @media (min-width: $screen-sm) {
     padding: 22px 6px;
   }
 }
@@ -65,6 +66,7 @@ html, body, #application, .full-height, .full-height>div {
 
 .link-nounderline {
   text-decoration: none;
+
   &:hover, &:focus, &:active {
     text-decoration: none;
   }
@@ -100,14 +102,15 @@ footer {
 
   .threefive-text {
     position: relative;
-    z-index:2;
+    z-index: 2;
+
     a {
       text-transform: uppercase;
       color: $gray-dark;
       font-size: 0.8em;
 
       &:hover, &:focus, &:active {
-        color: lighten($gray, 5%)
+        color: lighten($gray, 5%);
       }
     }
   }
@@ -132,7 +135,7 @@ footer {
   background: $white;
   border-radius: $border-radius-base;
   padding-bottom: $padding-base-vertical;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .shopify-tabset {

@@ -1,7 +1,7 @@
 ul.list-checkmark {
   list-style: none;
   padding-left: 2em;
-  
+
   li {
     display: block;
     position: relative;
@@ -10,10 +10,10 @@ ul.list-checkmark {
       left: -2em;
       position: absolute;
       content: '\f00c';
-      font-family: 'FontAwesome';
+      font-family: 'exsupport';
       color: $brand-primary;
     }
-  }  
+  }
 }
 
 ul.list-downloads {
@@ -29,10 +29,9 @@ ul.list-downloads {
 
     &:before {
       left: -2em;
-
       position: absolute;
       content: "\f019";
-      font-family: 'FontAwesome';
+      font-family: 'exsupport';
       color: $brand-primary;
     }
   }

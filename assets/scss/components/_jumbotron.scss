@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url('../images/three-pattern.png');
+  // background-image: url('../images/three-pattern.png');
   background-repeat: repeat;
   background-position: 50% 50%;
 
@@ -7,9 +7,7 @@
     font-weight: 900;
   }
 
-  &.inside-pane {
-    
-  }
+  &.inside-pane {}
 
   p {
     text-align: left;
@@ -24,8 +22,12 @@
     }
   }
 
-  @media(min-width: $screen-xs) {
+  @media (min-width: $screen-xs) {
     padding-top: 28px;
     padding-bottom: 28px;
+  }
+
+  @media (max-width: $screen-sm - 1) {
+    border-radius: 0 !important;
   }
 }

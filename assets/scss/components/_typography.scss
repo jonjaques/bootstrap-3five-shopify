@@ -1,6 +1,4 @@
-h1, .h1 {
-  
-}
+h1, .h1 {}
 
 h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
@@ -34,15 +32,15 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  color: $gray-light
+  color: $gray-light;
 }
 
 h5, .h5 {
-  color: $gray-light
+  color: $gray-light;
 }
 
 h6, .h6 {
-  color: $gray-light
+  color: $gray-light;
 }
 
 .text-smaller {
@@ -57,9 +55,8 @@ h6, .h6 {
   vertical-align: baseline;
 }
 
-
 input[type="checkbox"] {
-  display:none;
+  display: none;
 
   + label {
     font-weight: normal;
@@ -84,9 +81,32 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label:before {
-  font-family: FontAwesome;
+  font-family: exsupport;
   content: "\f00c";
   color: $brand-primary;
 }
 
+.link-nounderline {
+  text-decoration: none;
 
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+}
+
+.link-clickable:hover {
+  cursor: pointer;
+}
+
+.input-wysiwyg.form-control {
+  height: 150px;
+  font-family: monospace;
+  padding: 8px;
+}
+
+// .form-control[disabled] {
+// background-color: transparent;
+// border: none;
+// box-shadow: none;
+// cursor: auto;
+// }

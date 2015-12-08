@@ -1,4 +1,4 @@
-var base = 'node_modules/3five-shopify-theme'
+var base = 'node_modules/bootstrap-3five-shopify'
 
 module.exports.assets = [
   base + '/assets/fonts/**/*',

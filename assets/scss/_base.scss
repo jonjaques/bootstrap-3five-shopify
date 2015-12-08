@@ -1,12 +1,14 @@
-@import "fonts";
 @import "theme";
+@import "functions";
 @import "mixins";
+@import "fonts";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
+
 // @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
@@ -51,5 +53,4 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-@import "functions";
 @import "components/base";

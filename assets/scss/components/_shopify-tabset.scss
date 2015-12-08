@@ -1,0 +1,36 @@
+.shopify-tabset {
+  background: $gray-lighter;
+  border-radius: $border-radius-base $border-radius-base 0 0;
+
+  > li {
+    border: none;
+    border-right: 1px solid darken($gray-lighter, 5%);
+
+    > a {
+      margin-right: 0;
+      border: 1px solid transparent;
+      border-radius: 0;
+      color: $gray-light;
+
+      &:hover, &:focus {
+        background: lighten($gray-lighter, 5%);
+        color: $brand-primary;
+        border-bottom-color: #ddd;
+      }
+    }
+
+    &:first-child > a {
+      border-radius: $border-radius-base 0 0 0;
+    }
+
+    &.active > a, &.active > a:hover, &.active > a:focus {
+      background: $white;
+      border-color: transparent;
+      color: $gray-darker;
+    }
+  }
+}
+
+.shopify-tabpane {
+  padding: $padding-large-vertical $padding-large-horizontal;
+}

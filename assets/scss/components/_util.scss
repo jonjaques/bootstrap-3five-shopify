@@ -1,0 +1,21 @@
+.no-top-margin {
+  margin-top: 0;
+}
+
+.flat-bottom {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.debug [class*='col-'] {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 0, 0, 0.2) !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline-block;
+}

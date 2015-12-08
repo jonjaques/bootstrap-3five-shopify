@@ -1,0 +1,52 @@
+$fa-css-prefix: "icon";
+$fa-inverse: "white";
+
+.#{$fa-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+
+.#{$fa-css-prefix}-2x {
+  font-size: 2em;
+}
+
+.#{$fa-css-prefix}-3x {
+  font-size: 3em;
+}
+
+.#{$fa-css-prefix}-4x {
+  font-size: 4em;
+}
+
+.#{$fa-css-prefix}-5x {
+  font-size: 5em;
+}
+
+.#{$fa-css-prefix}-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em !important;
+  vertical-align: middle;
+}
+
+.#{$fa-css-prefix}-stack-1x, .#{$fa-css-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.#{$fa-css-prefix}-stack-1x {
+  line-height: inherit;
+}
+
+.#{$fa-css-prefix}-stack-2x {
+  font-size: 2em;
+}
+
+.#{$fa-css-prefix}-inverse {
+  color: $fa-inverse;
+}

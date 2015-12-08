@@ -1,15 +1,15 @@
 .table {
-  thead>tr>th, 
-  thead>tr>td, 
-  tbody>tr>th, 
-  tbody>tr>td, 
-  tfoot>tr>th, 
-  tfoot>tr>td {
+  thead > tr > th,
+  thead > tr > td,
+  tbody > tr > th,
+  tbody > tr > td,
+  tfoot > tr > th,
+  tfoot > tr > td {
     padding: 16px 8px;
   }
 
-  thead>tr>th, 
-  thead>tr>td {
+  thead > tr > th,
+  thead > tr > td {
     padding: 10px 8px;
     background-color: lighten($gray-light, 25%);
     color: $white;
@@ -19,13 +19,13 @@
     letter-spacing: 0.09em;
   }
 
-  &.table-bordered>thead>tr>th, 
-  &.table-bordered>thead>tr>td {
+  &.table-bordered > thead > tr > th,
+  &.table-bordered > thead > tr > td {
     border-bottom-width: 0;
     border: none;
   }
 
-  &.table-bordered>tbody>tr>td {
+  &.table-bordered > tbody > tr > td {
     border-left-width: 0;
 
     &:last-child {
@@ -37,12 +37,16 @@
     border: none;
   }
 
-  &.table-striped>tbody>tr:nth-of-type(odd) {
+  &.table-striped > tbody > tr:nth-of-type(odd) {
     background-color: #f3fafc;
   }
 
-  &.table-striped>tbody>tr:hover {
+  &.table-striped > tbody > tr:hover {
     background-color: darken(#f3fafc, 4%);
   }
 }
 
+.group-list-table td,
+.group-list-table th {
+  vertical-align: middle !important;
+}

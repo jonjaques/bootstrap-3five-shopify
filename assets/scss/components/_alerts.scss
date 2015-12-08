@@ -3,5 +3,12 @@
   border: none;
   border-radius: 0;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 14px;
+
+  &.alert-danger, &.alert-warning {
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
 }
